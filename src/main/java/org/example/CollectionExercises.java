@@ -24,33 +24,54 @@ public class CollectionExercises {
         // Create and return an array of strings with the given size (from the parameter)
         // Use a loop to set every element to "apple"
         // Replace the line below with your implementation
-        return null;
+        String[] fruitArray = new String[size];
+        for (int i = 0;i < size; i++){
+            fruitArray[i] = "apple";
+        }
+        return fruitArray;
     }
 
     public String[] makeTopThreeArray(String[] fruits) {
         // Create and return a new array of strings containing the first three elements of the given array
         // Replace the line below with your implementation
-        return null;
+        String[] newFruitArray = {fruits[0], fruits[1], fruits[2]};
+        return newFruitArray;
     }
 
     public ArrayList<String> makeFruitList() {
         // Create and return an ArrayList of strings with the following values:
         // "apple", "banana", "cherry", "date", "elderberry"
         // Replace the line below with your implementation
-        return null;
+        ArrayList<String> fruitArrayList = new ArrayList<String>();
+        fruitArrayList.add("apple");
+        fruitArrayList.add("banana");
+        fruitArrayList.add("cherry");
+        fruitArrayList.add("date");
+        fruitArrayList.add("elderberry");
+        return fruitArrayList;
     }
 
     public ArrayList<String> makeListOfThreeFruits(String fruit1, String fruit2, String fruit3) {
         // Create and return an ArrayList of strings with the given values
         // Replace the line below with your implementation
-        return null;
+        ArrayList<String> threeFruitList = new ArrayList<String>();
+        threeFruitList.add(fruit1);
+        threeFruitList.add(fruit2);
+        threeFruitList.add(fruit3);
+        return threeFruitList;
     }
 
     public HashMap<String, String> makeFruitMap() {
         // Create and return a HashMap with the following key-value pairs:
         // "apple" -> "red", "banana" -> "yellow", "cherry" -> "red", "date" -> "brown", "elderberry" -> "black"
         // Replace the line below with your implementation
-        return null;
+        HashMap<String,String> fruitMap = new HashMap<String,String>();
+        fruitMap.put("apple","red");
+        fruitMap.put("banana","yellow");
+        fruitMap.put("cherry","red");
+        fruitMap.put("date","brown");
+        fruitMap.put("elderberry","black");
+        return fruitMap;
     }
 
     public String lookupAppleColor(HashMap<String, String> fruitMap) {
